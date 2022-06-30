@@ -38,7 +38,7 @@ const num = Number("23");
 */
 
 // Function Declarations vs. Expressions
-
+/*
 // Function Declaration
 function calcAge1(birthYear) {
     return 2037 - birthYear;
@@ -52,3 +52,4 @@ const calcAge2 = function (birthYear) {
 const age2 = calcAge2(1991);
 
 console.log(age1, age2);
+*/
