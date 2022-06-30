@@ -13,7 +13,7 @@ if (hasDriversLicence) console.log("I can drive :D");
 */
 
 // Functions
-
+/*
 function logger() {
     console.log("My name is Teoman");
 }
@@ -35,3 +35,4 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
 const num = Number("23");
+*/
