@@ -12,7 +12,7 @@ console.log(descTurkiye, descFinland, descGermany);
 */
 
 // Assignment 2
-
+/*
 function percentageOfWorld1(population) {
     return (population / 7900) * 100;
 }
@@ -32,3 +32,4 @@ const percFinland2 = percentageOfWorld2(6);
 const percGermany2 = percentageOfWorld2(83);
 
 console.log(percTurkiye2, percFinland2, percGermany2);
+*/
