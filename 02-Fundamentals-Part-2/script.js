@@ -89,7 +89,7 @@ console.log(fruitProcessor(2, 3));
 */
 
 // Reviewing Functions
-
+/*
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
 }
@@ -109,3 +109,21 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 }
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1950, "Mike"));
+*/
+
+// Coding Challenge #1
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+
+function checkWinner(avgDolphins, avgKoalas) {
+    if (avgDolphins >= (avgKoalas) * 2) {
+        return console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+    } else if (avgKoalas >= (avgDolphins) * 2) {
+        return console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+    } else {
+        return console.log("No team wins!");
+    }
+}
+
+checkWinner(calcAverage(85, 54, 41), calcAverage(23, 34, 27));
