@@ -66,7 +66,7 @@ console.log(percTurkiye3, percFinland3, percGermany3);
 */
 
 // Assignment 4
-
+/*
 function percentageOfWorld1(population) {
     return (population / 7900) * 100;
 }
@@ -80,3 +80,4 @@ function describePopulation(country, population) {
 console.log(describePopulation("China", 1441));
 console.log(describePopulation("Turkiye", 84));
 console.log(describePopulation("Finland", 6));
+*/
