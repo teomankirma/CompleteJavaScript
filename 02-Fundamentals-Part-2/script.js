@@ -112,7 +112,7 @@ console.log(yearsUntilRetirement(1950, "Mike"));
 */
 
 // Coding Challenge #1
-
+/*
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
 
@@ -127,3 +127,4 @@ function checkWinner(avgDolphins, avgKoalas) {
 }
 
 checkWinner(calcAverage(85, 54, 41), calcAverage(23, 34, 27));
+*/
