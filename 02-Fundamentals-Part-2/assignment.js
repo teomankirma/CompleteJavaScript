@@ -143,3 +143,25 @@ myCountry["population"] = 84;
 
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
 */
+
+// Assignment 9
+
+const myCountry = {
+    country: "Turkiye",
+    capital: "Ankara",
+    language: "Turkish",
+    population: 84,
+    neighbours: ["Greece", "Bulgaria", "Romania"],
+
+    describe: function () {
+        return console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+    },
+
+    checkIsland: function () {
+        this.isIsland = this.neighbours.length === 0 ? true : false;
+    }
+};
+
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry);

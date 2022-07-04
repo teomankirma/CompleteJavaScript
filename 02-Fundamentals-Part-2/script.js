@@ -281,7 +281,7 @@ console.log(`${teoman.firstName} has ${teoman.friends.length} friends, and his b
 */
 
 // Object Methods
-
+/*
 const teoman = {
     firstName: "Teoman",
     lastName: "Kirma",
@@ -318,3 +318,4 @@ console.log(teoman.age);
 
 teoman.getSummary();
 // console.log(teoman["calcAge"](2002));
+*/
