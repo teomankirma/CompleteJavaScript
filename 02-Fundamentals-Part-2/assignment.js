@@ -100,3 +100,19 @@ function percentageOfWorld(population) {
     return (population / 7900) * 100;
 }
 */
+
+// Assignment 6
+
+const neighbours = ["Greece", "Bulgaria", "Romania"];
+
+const country = "Utopia";
+neighbours.push(country);
+
+neighbours.pop();
+
+if (!neighbours.includes("Germany")) {
+    console.log("Probably not a central European country :D");
+}
+
+neighbours[neighbours.indexOf("Romania")] = "Republic of Sweden";
+console.log(neighbours);
