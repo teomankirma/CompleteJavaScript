@@ -279,3 +279,42 @@ console.log(teoman);
 // "Teoman has 3 friends, and his best friend is called Michael"
 console.log(`${teoman.firstName} has ${teoman.friends.length} friends, and his best friend is called ${teoman.friends[0]}`);
 */
+
+// Object Methods
+
+const teoman = {
+    firstName: "Teoman",
+    lastName: "Kirma",
+    birthYear: 2002,
+    job: "student",
+    friends: ["Michael", "Peter", "Steven"],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthYear) {
+    //     return 2037 - birthYear;
+    // }
+
+    // calcAge: function () {
+    //     // console.log(this);
+    //     return 2037 - this.birthYear;
+    // }
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+    // Challenge
+    // "Jonas is a 46-year old teacher, and he has a driver's licence."
+    getSummary: function () {
+        return console.log(`${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? "a" : "no"} driver's licence.`);
+    }
+};
+
+console.log(teoman.calcAge());
+
+console.log(teoman.age);
+console.log(teoman.age);
+console.log(teoman.age);
+
+teoman.getSummary();
+// console.log(teoman["calcAge"](2002));

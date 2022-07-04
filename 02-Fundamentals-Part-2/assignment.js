@@ -130,7 +130,7 @@ const myCountry = {
 */
 
 // Assignment 8
-
+/*
 const myCountry = {
     country: "Turkiye",
     capital: "Ankara",
@@ -142,4 +142,4 @@ myCountry.population = 86;
 myCountry["population"] = 84;
 
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
-
+*/
