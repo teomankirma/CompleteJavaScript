@@ -83,7 +83,7 @@ console.log(describePopulation("Finland", 6));
 */
 
 // Assignment 5
-
+/*
 const populations = [84, 83, 1441, 6];
 console.log(populations.length === 4);
 
@@ -99,3 +99,4 @@ console.log(percentages);
 function percentageOfWorld(population) {
     return (population / 7900) * 100;
 }
+*/
