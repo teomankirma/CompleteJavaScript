@@ -119,7 +119,7 @@ console.log(neighbours);
 */
 
 // Assignment 7
-
+/*
 const myCountry = {
     country: "Turkiye",
     capital: "Ankara",
@@ -127,3 +127,4 @@ const myCountry = {
     population: 84,
     neighbours: ["Greece", "Bulgaria", "Romania"]
 };
+*/

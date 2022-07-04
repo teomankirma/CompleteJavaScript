@@ -242,3 +242,39 @@ const teoman = {
     friends: ["Michael", "Peter", "Steven"]
 };
 */
+
+// Dot vs. Bracket Notation
+
+const teoman = {
+    firstName: "Teoman",
+    lastName: "Kirma",
+    age: 2022 - 2002,
+    job: "student",
+    friends: ["Michael", "Peter", "Steven"]
+};
+console.log(teoman);
+
+console.log(teoman.lastName);
+console.log(teoman["lastName"]);
+
+const nameKey = "Name";
+console.log(teoman["first" + nameKey]);
+console.log(teoman["last" + nameKey]);
+
+// console.log(teoman."last" + nameKey);
+
+const interestedIn = prompt("What do you want to know about Teoman? Choose between firstName, lastName, age, job, and friends");
+
+if (teoman[interestedIn]) {
+    console.log(teoman[interestedIn]);
+} else {
+    console.log("Wrong request! Choose between firstName, lastName, age, job, and friends");
+}
+
+teoman.location = "Turkiye";
+teoman["twitter"] = "@teomankirma";
+console.log(teoman);
+
+// Challenge
+// "Teoman has 3 friends, and his best friend is called Michael"
+console.log(`${teoman.firstName} has ${teoman.friends.length} friends, and his best friend is called ${teoman.friends[0]}`);
