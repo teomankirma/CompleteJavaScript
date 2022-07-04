@@ -81,3 +81,21 @@ console.log(describePopulation("China", 1441));
 console.log(describePopulation("Turkiye", 84));
 console.log(describePopulation("Finland", 6));
 */
+
+// Assignment 5
+
+const populations = [84, 83, 1441, 6];
+console.log(populations.length === 4);
+
+const percentages = [
+    percentageOfWorld(populations[0]),
+    percentageOfWorld(populations[1]),
+    percentageOfWorld(populations[2]),
+    percentageOfWorld(populations[3])
+];
+
+console.log(percentages);
+
+function percentageOfWorld(population) {
+    return (population / 7900) * 100;
+}

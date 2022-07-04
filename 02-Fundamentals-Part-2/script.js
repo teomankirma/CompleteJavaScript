@@ -130,7 +130,7 @@ checkWinner(calcAverage(85, 54, 41), calcAverage(23, 34, 27));
 */
 
 // Introduction to Arrays
-
+/*
 const friend1 = "Michael";
 const friend2 = "Steven";
 const friend3 = "Peter";
@@ -168,3 +168,4 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/
