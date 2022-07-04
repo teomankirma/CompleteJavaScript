@@ -203,3 +203,22 @@ if (friends.includes("Steven")) {
     console.log("You have a friend called Steven");
 }
 */
+
+// Coding Challenge #2
+
+function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+        return bill * 0.15;
+    } else {
+        return bill * 0.20;
+    }
+}
+
+console.log(calcTip(100));
+
+const bills = [125, 555, 44]
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(bills, tips);
+
+const total = [tips[0] + 125, tips[1] + 555, tips[2] + 44];
+console.log(total);

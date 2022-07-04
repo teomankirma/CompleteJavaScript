@@ -102,7 +102,7 @@ function percentageOfWorld(population) {
 */
 
 // Assignment 6
-
+/*
 const neighbours = ["Greece", "Bulgaria", "Romania"];
 
 const country = "Utopia";
@@ -116,3 +116,4 @@ if (!neighbours.includes("Germany")) {
 
 neighbours[neighbours.indexOf("Romania")] = "Republic of Sweden";
 console.log(neighbours);
+*/
