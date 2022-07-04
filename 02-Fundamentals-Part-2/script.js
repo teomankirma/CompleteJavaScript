@@ -225,7 +225,7 @@ console.log(total);
 */
 
 // Introduction to Objects
-
+/*
 const teomanArray = [
     "Teoman",
     "Kirma",
@@ -241,3 +241,4 @@ const teoman = {
     job: "student",
     friends: ["Michael", "Peter", "Steven"]
 };
+*/
