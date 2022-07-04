@@ -145,7 +145,7 @@ console.log(`${myCountry.country} has ${myCountry.population} million ${myCountr
 */
 
 // Assignment 9
-
+/*
 const myCountry = {
     country: "Turkiye",
     capital: "Ankara",
@@ -165,3 +165,4 @@ const myCountry = {
 myCountry.describe();
 myCountry.checkIsland();
 console.log(myCountry);
+*/
