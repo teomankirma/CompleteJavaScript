@@ -205,7 +205,7 @@ if (friends.includes("Steven")) {
 */
 
 // Coding Challenge #2
-
+/*
 function calcTip(bill) {
     if (bill >= 50 && bill <= 300) {
         return bill * 0.15;
@@ -222,3 +222,22 @@ console.log(bills, tips);
 
 const total = [tips[0] + 125, tips[1] + 555, tips[2] + 44];
 console.log(total);
+*/
+
+// Introduction to Objects
+
+const teomanArray = [
+    "Teoman",
+    "Kirma",
+    2022 - 2002,
+    "student",
+    ["Michael", "Peter", "Steven"]
+];
+
+const teoman = {
+    firstName: "Teoman",
+    lastName: "Kirma",
+    age: 2022 - 2002,
+    job: "student",
+    friends: ["Michael", "Peter", "Steven"]
+};
