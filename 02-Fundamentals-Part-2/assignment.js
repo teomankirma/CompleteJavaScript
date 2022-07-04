@@ -128,3 +128,18 @@ const myCountry = {
     neighbours: ["Greece", "Bulgaria", "Romania"]
 };
 */
+
+// Assignment 8
+
+const myCountry = {
+    country: "Turkiye",
+    capital: "Ankara",
+    language: "Turkish",
+    population: 84,
+    neighbours: ["Greece", "Bulgaria", "Romania"]
+};
+myCountry.population = 86;
+myCountry["population"] = 84;
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+

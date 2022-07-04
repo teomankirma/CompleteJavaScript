@@ -244,7 +244,7 @@ const teoman = {
 */
 
 // Dot vs. Bracket Notation
-
+/*
 const teoman = {
     firstName: "Teoman",
     lastName: "Kirma",
@@ -278,3 +278,4 @@ console.log(teoman);
 // Challenge
 // "Teoman has 3 friends, and his best friend is called Michael"
 console.log(`${teoman.firstName} has ${teoman.friends.length} friends, and his best friend is called ${teoman.friends[0]}`);
+*/
