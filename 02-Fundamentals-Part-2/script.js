@@ -465,3 +465,38 @@ while (dice !== 6) {
     if (dice === 6) console.log("Loop is about to end...");
 }
 */
+
+// Coding Challenge #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
+
+function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+        return bill * 0.15;
+    } else {
+        return bill * 0.20;
+    }
+}
+
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip(bills[i]));
+    total.push(bills[i] + tips[i]);
+}
+
+console.log(bills);
+console.log(tips);
+console.log(total);
+
+// Bonus
+function calcAverage(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    let average = sum / arr.length;
+    return average;
+}
+
+console.log(calcAverage(total));

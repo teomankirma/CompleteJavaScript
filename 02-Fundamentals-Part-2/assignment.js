@@ -202,7 +202,7 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
 */
 
 // Assignment 13
-
+/*
 const populations = [84, 83, 1441, 6];
 const percentages3 = [];
 
@@ -216,3 +216,4 @@ while (i < populations.length) {
     i++;
 }
 console.log(percentages3);
+*/
