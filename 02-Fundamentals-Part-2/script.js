@@ -365,3 +365,54 @@ for (let rep = 1; rep <= 30; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
 */
+
+// Looping Arrays, Breaking and Continuing
+
+const teoman = [
+    "Teoman",
+    "Kirma",
+    2022 - 2002,
+    "student",
+    ["Michael", "Peter", "Steven"],
+    true
+];
+const types = [];
+
+// console.log(jonas[0]);
+// console.log(jonas[1]);
+// ...
+// console.log(jonas[4]);
+
+for (let i = 0; i < teoman.length; i++) {
+    // Reading from teoman array
+    console.log(teoman[i], typeof teoman[i]);
+
+    // Filling types array
+    // types[i] = typeof teoman[i];
+    types.push(typeof teoman[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log("--- ONLY STRINGS ---");
+for (let i = 0; i < teoman.length; i++) {
+    if (typeof teoman[i] !== "string") continue;
+
+    console.log(teoman[i], typeof teoman[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < teoman.length; i++) {
+    if (typeof teoman[i] === "number") break;
+
+    console.log(teoman[i], typeof teoman[i]);
+}

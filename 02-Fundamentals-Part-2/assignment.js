@@ -168,7 +168,8 @@ console.log(myCountry);
 */
 
 // Assignment 10
-
+/*
 for (let voter = 1; voter <= 50; voter++) {
     console.log(`Voter number ${voter} currently voting`);
 }
+*/
