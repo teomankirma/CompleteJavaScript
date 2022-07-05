@@ -348,7 +348,7 @@ console.log(mark.callBMI() > john.callBMI() ? `Mark's BMI (${mark.BMI}) is highe
 */
 
 // Iteration: The For Loop
-
+/*
 // console.log("Lifting weights repetition 1 🏋️‍♀️");
 // console.log("Lifting weights repetition 2 🏋️‍♀️");
 // console.log("Lifting weights repetition 3 🏋️‍♀️");
@@ -364,3 +364,4 @@ console.log(mark.callBMI() > john.callBMI() ? `Mark's BMI (${mark.BMI}) is highe
 for (let rep = 1; rep <= 30; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
+*/
