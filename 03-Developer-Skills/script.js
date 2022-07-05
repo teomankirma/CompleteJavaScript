@@ -56,7 +56,7 @@ console.log(amplitudeNew);
 */
 
 // Fixing a Bug
-
+/*
 const measureKelvin = function () {
   const measurement = {
     type: "temp",
@@ -101,3 +101,19 @@ const calcTempAmplitudeBug = function (t1, t2) {
 const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 // A) IDENTIFY
 console.log(amplitudeBug);
+*/
+
+// Coding Challenge #1
+
+const temp1 = [17, 21, 23];
+const temp2 = [12, 5, -5, 0, 4];
+
+function printForecast(arr) {
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    str += `${arr[i]}°C in ${i + 1} days ... `;
+  }
+  console.log("..." + str);
+}
+printForecast(temp1);
+printForecast(temp2);
