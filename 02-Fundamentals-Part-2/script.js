@@ -419,7 +419,7 @@ for (let i = 0; i < teoman.length; i++) {
 */
 
 // Looping Backwards and Loops In Loops
-
+/*
 const teoman = [
     "Teoman",
     "Kirma",
@@ -443,3 +443,4 @@ for (let exercise = 1; exercise < 4; exercise++) {
         console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♀️`);
     }
 }
+*/
