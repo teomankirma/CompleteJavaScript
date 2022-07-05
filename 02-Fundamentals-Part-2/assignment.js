@@ -200,3 +200,19 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
     }
 }
 */
+
+// Assignment 13
+
+const populations = [84, 83, 1441, 6];
+const percentages3 = [];
+
+function percentageOfWorld2(population) {
+    return (population / 7900) * 100;
+}
+
+let i = 0;
+while (i < populations.length) {
+    percentages3[i] = percentageOfWorld2(populations[i]);
+    i++;
+}
+console.log(percentages3);
