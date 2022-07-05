@@ -367,7 +367,7 @@ for (let rep = 1; rep <= 30; rep++) {
 */
 
 // Looping Arrays, Breaking and Continuing
-
+/*
 const teoman = [
     "Teoman",
     "Kirma",
@@ -416,3 +416,4 @@ for (let i = 0; i < teoman.length; i++) {
 
     console.log(teoman[i], typeof teoman[i]);
 }
+*/
