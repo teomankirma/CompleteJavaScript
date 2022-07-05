@@ -175,7 +175,7 @@ for (let voter = 1; voter <= 50; voter++) {
 */
 
 // Assignment 11
-
+/*
 const populations = [84, 83, 1441, 6];
 const percentages2 = [];
 
@@ -188,3 +188,4 @@ for (let i = 0; i < populations.length; i++) {
 }
 
 console.log(percentages2);
+*/
