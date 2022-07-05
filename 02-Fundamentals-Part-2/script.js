@@ -321,7 +321,7 @@ teoman.getSummary();
 */
 
 // Coding Challenge #3
-
+/*
 const mark = {
     fullName: "Mark Miller",
     mass: 78,
@@ -345,3 +345,22 @@ const john = {
 }
 
 console.log(mark.callBMI() > john.callBMI() ? `Mark's BMI (${mark.BMI}) is higher than John's (${john.BMI})` : `John's BMI (${john.BMI}) is higher than Mark's (${mark.BMI})`);
+*/
+
+// Iteration: The For Loop
+
+// console.log("Lifting weights repetition 1 🏋️‍♀️");
+// console.log("Lifting weights repetition 2 🏋️‍♀️");
+// console.log("Lifting weights repetition 3 🏋️‍♀️");
+// console.log("Lifting weights repetition 4 🏋️‍♀️");
+// console.log("Lifting weights repetition 5 🏋️‍♀️");
+// console.log("Lifting weights repetition 6 🏋️‍♀️");
+// console.log("Lifting weights repetition 7 🏋️‍♀️");
+// console.log("Lifting weights repetition 8 🏋️‍♀️");
+// console.log("Lifting weights repetition 9 🏋️‍♀️");
+// console.log("Lifting weights repetition 10 🏋️‍♀️");
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 30; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+}
