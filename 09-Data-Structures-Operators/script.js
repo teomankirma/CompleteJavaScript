@@ -48,7 +48,18 @@ const restaurant = {
     );
   },
 };
+add(2, 3);
+add(5, 3, 7, 2);
+add(8, 2, 5, 3, 2, 1, 4);
 
+const x = [23, 5, 7];
+add(...x);
+
+restaurant.orderPizza("Mushrooms", "Onion", "Olives", "Spinach");
+restaurant.orderPizza("Mushrooms");
+
+// The Spread Operator
+/*
 const arr = [7, 8, 9];
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
 console.log(badNewArr);
@@ -99,6 +110,7 @@ const restaurantCopy = { ...restaurant };
 restaurantCopy.name = "Ristorante Roma";
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
+*/
 
 // Destructuring Objects
 /*
