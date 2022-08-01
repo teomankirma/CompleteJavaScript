@@ -52,8 +52,50 @@ const restaurant = {
   },
 };
 
-// Coding Challenge #3
+// Working with Strings - Part 1
 
+const airline = "Turkish Airlines";
+const plane = "A320";
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log("B737"[0]);
+
+console.log(airline.length);
+console.log("B737".length);
+
+console.log(airline.indexOf("r"));
+console.log(airline.lastIndexOf("r"));
+console.log(airline.indexOf("Airlines"));
+
+console.log(airline.slice(4));
+console.log(airline.slice(0, 7));
+
+console.log(airline.slice(0, airline.indexOf(" ")));
+console.log(airline.slice(airline.lastIndexOf(" ") + 1));
+
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));
+
+const checkMiddleSeat = function (seat) {
+  // B and E are middle seats
+  const s = seat.slice(-1);
+  if (s === "B" || s === "E") console.log("You got the middle seat 😬");
+  else console.log("You got lucky 😎");
+};
+
+checkMiddleSeat("11B");
+checkMiddleSeat("23C");
+checkMiddleSeat("3E");
+
+console.log(new String("teoman"));
+console.log(typeof new String("teoman"));
+
+console.log(typeof new String("teoman").slice(1));
+
+// Coding Challenge #3
+/*
 const gameEvents = new Map([
   [17, "⚽ GOAL"],
   [36, "🔁 Substitution"],
@@ -82,6 +124,7 @@ for (const [minute, event] of gameEvents) {
   if (minute <= 45) console.log(`[FIRST HALF]: [${minute}, ${event}]`);
   else console.log(`[SECOND HALF]: [${minute}, ${event}]`);
 }
+*/
 
 // Maps: Iteration
 /*
