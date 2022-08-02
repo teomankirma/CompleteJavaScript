@@ -52,7 +52,21 @@ const restaurant = {
   },
 };
 
+// String Methods Practice
+
+for (const flight of flights.split("+")) {
+  const [type, from, to, time] = flight.split(";");
+  const output = `${type.startsWith("_Delayed") ? "🔴" : ""}${type.replaceAll(
+    "_",
+    " "
+  )} from ${from.slice(0, 3).toUpperCase()} to ${to
+    .slice(0, 3)
+    .toUpperCase()} (${time.replace(":", "h")})`.padStart(36);
+  console.log(output);
+}
+
 // Coding Challenge #4
+/*
 document.body.append(document.createElement("textarea"));
 document.body.append(document.createElement("button"));
 
@@ -66,6 +80,7 @@ document.querySelector("button").addEventListener("click", function () {
     console.log(`${output.padEnd(20)}${"✅".repeat(i + 1)}`);
   }
 });
+*/
 
 //  Working with Strings - Part 3
 /*
