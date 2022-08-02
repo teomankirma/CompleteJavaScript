@@ -66,7 +66,7 @@ checkIn(flight, teoman);
 */
 
 // Functions Accepting Callback Functions
-
+/*
 const oneWord = function (str) {
   return str.replaceAll(" ", "").toLowerCase();
 };
@@ -94,3 +94,23 @@ const high5 = function () {
 document.body.addEventListener("click", high5);
 
 ["Teoman", "Martha", "Adam"].forEach(high5);
+*/
+
+// Functions Returning Functions
+
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet("Hey");
+greeterHey("Teoman");
+greeterHey("Seker");
+
+greet("Hello")("Teoman");
+
+// Challenge
+const greetArrow = (greeting) => (name) => console.log(`${greeting} ${name}`);
+
+greetArrow("Hi")("teo");
