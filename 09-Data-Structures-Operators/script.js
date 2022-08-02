@@ -53,7 +53,7 @@ const restaurant = {
 };
 
 // String Methods Practice
-
+/*
 for (const flight of flights.split("+")) {
   const [type, from, to, time] = flight.split(";");
   const output = `${type.startsWith("_Delayed") ? "🔴" : ""}${type.replaceAll(
@@ -64,6 +64,7 @@ for (const flight of flights.split("+")) {
     .toUpperCase()} (${time.replace(":", "h")})`.padStart(36);
   console.log(output);
 }
+*/
 
 // Coding Challenge #4
 /*
