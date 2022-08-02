@@ -166,3 +166,51 @@ book.apply(sunExpress, flightData);
 console.log(sunExpress);
 
 book.call(sunExpress, ...flightData);
+
+// The bind method
+// book.call(anadoluJet, 2312, "Sarah Williams");
+
+const bookAJ = book.bind(anadoluJet);
+const bookTA = book.bind(turkishAirlines);
+const bookSE = book.bind(sunExpress);
+
+bookAJ(2314, "Lebron James");
+
+const bookAJ2312 = book.bind(anadoluJet, 2312);
+bookAJ2312("Teoman Kirma");
+bookAJ2312("Martha Cooper");
+
+// With Event Listeners
+turkishAirlines.planes = 300;
+turkishAirlines.buyPlane = function () {
+  console.log(this);
+
+  this.planes++;
+  console.log(this.planes);
+};
+// turkishAirlines.buyPlane();
+
+document
+  .querySelector(".buy")
+  .addEventListener("click", turkishAirlines.buyPlane.bind(turkishAirlines));
+
+// Partial Application
+
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.1, 200));
+
+const addVAT = addTax.bind(null, 0.23);
+// addVAT = value => value + value * 0.23;
+
+console.log(addVAT(100));
+console.log(addVAT(23));
+
+const addTaxRate = function (rate) {
+  return function (value) {
+    return value + value * rate;
+  };
+};
+
+const addVAT2 = addTaxRate(0.23);
+console.log(addVAT2(100));
+console.log(addVAT2(23));
