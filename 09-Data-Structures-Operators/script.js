@@ -52,8 +52,23 @@ const restaurant = {
   },
 };
 
-//  Working with Strings - Part 3
+// Coding Challenge #4
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
 
+document.querySelector("button").addEventListener("click", function () {
+  const text = document.querySelector("textarea").value;
+  const rows = text.split("\n");
+
+  for (const [i, row] of rows.entries()) {
+    const [first, second] = row.toLowerCase().trim().split("_");
+    const output = `${first + second[0].toUpperCase() + second.slice(1)}`;
+    console.log(`${output.padEnd(20)}${"✅".repeat(i + 1)}`);
+  }
+});
+
+//  Working with Strings - Part 3
+/*
 // Split and join
 console.log("a+very+nice+string".split("+"));
 console.log("Teoman Kirma".split(" "));
@@ -101,6 +116,7 @@ const planesInLine = function (n) {
 planesInLine(5);
 planesInLine(3);
 planesInLine(12);
+*/
 
 // Working with Strings - Part 2
 /*
