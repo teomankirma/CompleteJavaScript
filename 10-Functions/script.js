@@ -97,7 +97,7 @@ document.body.addEventListener("click", high5);
 */
 
 // Functions Returning Functions
-
+/*
 const greet = function (greeting) {
   return function (name) {
     console.log(`${greeting} ${name}`);
@@ -114,3 +114,55 @@ greet("Hello")("Teoman");
 const greetArrow = (greeting) => (name) => console.log(`${greeting} ${name}`);
 
 greetArrow("Hi")("teo");
+*/
+
+// The call and apply Methods
+
+const turkishAirlines = {
+  airline: "Turkish Airlines",
+  iataCode: "TK",
+  bookings: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
+  },
+};
+
+turkishAirlines.book(2310, "Teoman Kirma");
+turkishAirlines.book(2311, "John Smith");
+console.log(turkishAirlines);
+
+const anadoluJet = {
+  airline: "Anadolu Jet",
+  iataCode: "THY",
+  bookings: [],
+};
+
+const book = turkishAirlines.book;
+
+// Does NOT work
+// book(2312, "Sarah Williams");
+
+// Call method
+book.call(anadoluJet, 2312, "Sarah Williams");
+console.log(anadoluJet);
+
+book.call(turkishAirlines, 2313, "Michael Jordan");
+console.log(turkishAirlines);
+
+const sunExpress = {
+  airline: "Sun Express",
+  iataCode: "SQ",
+  bookings: [],
+};
+
+book.call(sunExpress, 7689, "Seker Kirma");
+
+// Apply method
+const flightData = [6598, "George Cooper"];
+book.apply(sunExpress, flightData);
+console.log(sunExpress);
+
+book.call(sunExpress, ...flightData);
