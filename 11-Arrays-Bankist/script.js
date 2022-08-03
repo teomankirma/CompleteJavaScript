@@ -82,6 +82,20 @@ const displayMovements = function (movements) {
 };
 displayMovements(account1.movements);
 
+const createUsernames = function (accs) {
+  accs.forEach(function (acc) {
+    acc.username = acc.owner
+      .toLowerCase()
+      .split(" ")
+      .map(function (name) {
+        return name[0];
+      })
+      .join("");
+  });
+};
+createUsernames(accounts);
+console.log(accounts);
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
@@ -208,7 +222,7 @@ checkDogs(juliaData, kateData);
 */
 
 // The map method
-
+/*
 const euroToUsd = 1.1;
 
 // const movementsUSD = movements.map(function (mov) {
@@ -230,3 +244,4 @@ const movementsDescriptions = movements.map(function (mov, i) {
   }: You ${mov > 0 ? "deposited" : "withdrew"} ${Math.abs(mov)}`;
 });
 console.log(movementsDescriptions);
+*/
