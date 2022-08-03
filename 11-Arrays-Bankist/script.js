@@ -86,7 +86,7 @@ displayMovements(account1.movements);
 /////////////////////////////////////////////////
 // LECTURES
 
-// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 
@@ -183,7 +183,7 @@ currenciesUnique.forEach(function (value, _value, map) {
 */
 
 // Coding Challenge #1
-
+/*
 const juliaData = [3, 5, 2, 12, 7];
 const kateData = [4, 1, 15, 8, 3];
 
@@ -205,3 +205,28 @@ const checkDogs = function (dogsJulia, dogsKate) {
 };
 
 checkDogs(juliaData, kateData);
+*/
+
+// The map method
+
+const euroToUsd = 1.1;
+
+// const movementsUSD = movements.map(function (mov) {
+//   return mov * euroToUsd;
+// });
+
+const movementsUSD = movements.map((mov) => mov * euroToUsd);
+
+console.log(movements);
+console.log(movementsUSD);
+
+const movementsUSDfor = [];
+for (const mov of movements) movementsUSDfor.push(mov * euroToUsd);
+console.log(movementsUSDfor);
+
+const movementsDescriptions = movements.map(function (mov, i) {
+  return `Movement ${
+    i + 1
+  }: You ${mov > 0 ? "deposited" : "withdrew"} ${Math.abs(mov)}`;
+});
+console.log(movementsDescriptions);
