@@ -181,3 +181,27 @@ currenciesUnique.forEach(function (value, _value, map) {
   console.log(`${_value}: ${value}`);
 });
 */
+
+// Coding Challenge #1
+
+const juliaData = [3, 5, 2, 12, 7];
+const kateData = [4, 1, 15, 8, 3];
+
+const checkDogs = function (dogsJulia, dogsKate) {
+  const newJuliaData = dogsJulia.slice();
+  newJuliaData.splice(0, 1);
+  newJuliaData.splice(-2);
+  const allData = newJuliaData.concat(dogsKate);
+
+  allData.forEach(function (value, index) {
+    if (value >= 3) {
+      console.log(
+        `Dog number ${index + 1} is an adult, and is ${value} years old.`
+      );
+    } else {
+      console.log(`Dog number ${index + 1} is still a puppy 🐶`);
+    }
+  });
+};
+
+checkDogs(juliaData, kateData);
