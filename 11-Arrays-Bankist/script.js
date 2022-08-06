@@ -656,6 +656,7 @@ console.log(convertTitleCase("and here is another title with an EXAMPLE"));
 */
 
 // Coding Challenge #4
+/*
 const dogs = [
   { weight: 22, curFood: 250, owners: ["Alice", "Bob"] },
   { weight: 8, curFood: 200, owners: ["Matilda"] },
@@ -702,3 +703,4 @@ console.log(dogs.filter(checkEatingOkay));
 
 const dogsSorted = dogs.slice().sort((a, b) => a.recFood - b.recFood);
 console.log(dogsSorted);
+*/
