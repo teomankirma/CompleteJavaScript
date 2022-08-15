@@ -507,6 +507,7 @@ console.log(acc1.getMovements());
 */
 
 // Coding Challenge #4
+/*
 class CarCl {
   constructor(make, speed) {
     this.make = make;
@@ -552,3 +553,4 @@ rivian
   .brake()
   .chargeBattery(50)
   .accelerate();
+*/
