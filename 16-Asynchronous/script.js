@@ -358,7 +358,7 @@ btn.addEventListener("click", whereAmI);
 */
 
 // Coding Challenge #2
-
+/*
 const imgContainer = document.querySelector(".images");
 
 const createImage = function (imgPath) {
@@ -383,21 +383,6 @@ const wait = function (seconds) {
   });
 };
 
-//   wait(1)
-//     .then(() => {
-//       console.log("1 second passed");
-//       return wait(1);
-//     })
-//     .then(() => {
-//       console.log("2 second passed");
-//       return wait(1);
-//     })
-//     .then(() => {
-//       console.log("3 second passed");
-//       return wait(1);
-//     })
-//     .then(() => console.log("4 second passed"));
-
 let currentImg;
 
 createImage("img/img-1.jpg")
@@ -419,3 +404,37 @@ createImage("img/img-1.jpg")
     currentImg.style.display = "none";
   })
   .catch((err) => console.error(err));
+*/
+
+// Consuming Promises with Async/Await
+
+const getPosition = function () {
+  return new Promise(function (resolve, reject) {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  });
+};
+
+//   fetch(`https://restcountries.com/v2/name/${country}`).then((res) =>
+//     console.log(res)
+//   );
+
+const whereAmI = async function () {
+  // Geolocation
+  const pos = await getPosition();
+  const { latitude: lat, longitude: lng } = pos.coords;
+
+  // Reverse geocoding
+  const resGeo = await fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`);
+  const dataGeo = await resGeo.json();
+
+  // Country data
+
+  const res = await fetch(
+    `https://restcountries.com/v2/name/${dataGeo.country}`
+  );
+  const data = await res.json();
+  console.log(data);
+  renderCountry(data[0]);
+};
+whereAmI();
+console.log("FIRST");
