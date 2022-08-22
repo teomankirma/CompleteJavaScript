@@ -115,3 +115,24 @@ console.log(stateDeepClone);
 if (module.hot) {
   module.hot.accept();
 }
+
+class Person {
+  greeting = "Hey";
+  constructor(name) {
+    this.name = name;
+    console.log(`${this.greeting}, ${this.name}`);
+  }
+}
+const teoman = new Person("Teoman");
+
+console.log("Teoman" ?? null);
+
+console.log(cart.find((el) => el.quantity >= 2));
+Promise.resolve("TEST").then((x) => console.log(x));
+
+import "core-js/stable";
+// import "core-js/stable/array/find";
+// import "core-js/stable/promise";
+
+// Polyfilling async function
+import "regenerator-runtime/runtime";
