@@ -4,6 +4,7 @@ import { state } from "../model.js";
 
 class AddRecipeView extends View {
   _parentElement = document.querySelector(".upload");
+  _message = "Recipe was succesfully uploaded :)";
 
   _window = document.querySelector(".add-recipe-window");
   _overlay = document.querySelector(".overlay");
